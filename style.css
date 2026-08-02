@@ -1,0 +1,343 @@
+body {
+
+    margin: 0;
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: linear-gradient(135deg, #eadcff, #d8b4fe, #f3e8ff);
+
+    font-family: Arial, sans-serif;
+
+    overflow-x: hidden;
+
+}
+
+
+/* Sparkles */
+
+body::before {
+
+    content: "✨ ✦ ✨ ✦ ✨";
+
+    position: fixed;
+
+    top: 5%;
+    left: 10%;
+
+    font-size: 25px;
+
+    color: white;
+
+    animation: sparkle 4s infinite alternate;
+
+}
+
+
+@keyframes sparkle {
+
+    from {
+        transform: translateY(0);
+        opacity: 0.5;
+    }
+
+    to {
+        transform: translateY(40px);
+        opacity: 1;
+    }
+
+}
+
+
+
+/* Main box */
+
+.login-box {
+
+    width: 85%;
+
+    max-width: 500px;
+
+    padding: 35px;
+
+    text-align: center;
+
+    background: rgba(255,255,255,0.45);
+
+    backdrop-filter: blur(10px);
+
+    border-radius: 25px;
+
+    box-shadow: 0 0 25px #c8a2c8;
+
+}
+
+
+
+/* Headings */
+
+h1 {
+
+    color: #7b2cbf;
+
+}
+
+
+h2 {
+
+    color: #9d4edd;
+
+}
+
+
+
+/* Paragraph */
+
+p {
+
+    color: #5a189a;
+
+    font-size: 17px;
+
+    line-height: 1.6;
+
+}
+
+
+
+/* Password input */
+
+input {
+
+    width: 220px;
+
+    padding: 12px;
+
+    border-radius: 25px;
+
+    border: none;
+
+    text-align: center;
+
+    font-size: 16px;
+
+}
+
+
+
+/* Buttons */
+
+button {
+
+    margin-top: 20px;
+
+    padding: 12px 30px;
+
+    border: none;
+
+    border-radius: 25px;
+
+    background: #9d4edd;
+
+    color: white;
+
+    font-size: 16px;
+
+    cursor: pointer;
+
+}
+
+
+button:hover {
+
+    background: #7b2cbf;
+
+    transform: scale(1.05);
+
+}
+
+
+
+/* FRIEND PHOTO SECTION */
+
+
+.friend {
+
+    margin: 35px 0;
+
+    text-align: center;
+
+}
+
+
+
+.friend img {
+
+    width: 220px;
+
+    height: 220px;
+
+    object-fit: cover;
+
+    border-radius: 20px;
+
+    border: 5px solid #c8a2c8;
+
+    box-shadow: 0 0 20px #c8a2c8;
+
+}
+
+
+
+/* THEN NOW SECTION */
+
+
+.together {
+
+    text-align: center;
+
+}
+
+
+.together img {
+
+    width: 250px;
+
+    height: 220px;
+
+    object-fit: cover;
+
+    display: block;
+
+    margin: 25px auto;
+
+    border-radius: 20px;
+
+    border: 5px solid #c8a2c8;
+
+    box-shadow: 0 0 20px #c8a2c8;
+
+}
+
+
+
+/* Mobile screen */
+
+@media(max-width:600px){
+
+
+.login-box {
+
+    width: 85%;
+
+    max-width: 500px;
+
+    padding: 35px;
+
+    margin: 30px auto;
+
+    text-align: center;
+
+    background: rgba(255,255,255,0.45);
+
+    backdrop-filter: blur(10px);
+
+    border-radius: 25px;
+
+    box-shadow: 0 0 25px #c8a2c8;
+
+}
+
+
+.friend img{
+
+    width:200px;
+
+    height:200px;
+
+}
+
+
+.together img{
+
+    width:220px;
+
+    height:200px;
+
+}
+
+
+}
+.friend,
+.together {
+
+    display: block;
+
+    width: 100%;
+
+}
+.photo-page {
+
+    width: 90%;
+
+    max-width: 700px;
+
+    margin: 40px auto;
+
+    text-align: center;
+
+}
+
+
+.photo-page .friend {
+
+    margin-bottom: 60px;
+
+    padding: 25px;
+
+    background: rgba(255,255,255,0.45);
+
+    border-radius: 25px;
+
+    box-shadow: 0 0 20px #c8a2c8;
+
+}
+
+
+.photo-page .friend img {
+
+    width: 230px;
+
+    height: 230px;
+
+    object-fit: cover;
+
+    border-radius: 20px;
+
+}
+
+
+.photo-page .together {
+
+    margin-top: 40px;
+
+}
+
+
+.photo-page .together img {
+
+    display: block;
+
+    width: 280px;
+
+    height: 230px;
+
+    object-fit: cover;
+
+    margin: 30px auto;
+
+    border-radius: 20px;
+
+}
